@@ -4,5 +4,14 @@
         <title>Name</title>
     </head>
     <body>
+        <h1 style="font-weight: bold;" th:text="${#strings.substring(name, 0)}">Your paragraph text goes here</h1>
+        <ol>
+            <li th:text="${#strings.substring(name, 0, 1)}">Second item</li>
+            <li th:text="${#strings.substring(name, 0, 2)}">Third item</li>
+            <li th:text="${#strings.substring(name, 0, 3)}">Third item</li>
+            <li th:text="${#strings.substring(name, 0, 4)}">Third item</li>
+            <li th:text="${#strings.substring(name, 0, 5)}">Third item</li>
+            <li th:text="${#strings.substring(name, 0, 6)}">Third item</li>
+          </ol>
     </body>
 </html>
